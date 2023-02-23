@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(145deg, #A1164E, #7F58AF);
+    font-size: 100%;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Sarala', sans-serif;
+    height: 50px;
+    background-color: #F7F7F7;
+}
+
+#header-img {
+    height: 50px;
+    padding-bottom: 2px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    margin-right: 2rem;
+}
+
+.nav-link {
+    font-weight: 800;
+    color: #111111;
+}
+
+.nav-link:hover {
+    color: #7F58AF;
+    transition: 0.5s;
+}
+
+#main {
+    margin-bottom: 45px;
+}
+
+#conheca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    max-width: 1100px;
+    margin: auto auto 3rem;
+    padding-top: 5rem;
+}
+
+.conhecaescrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#tituloconheca {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    font-weight: 400;
+    color: #F7F7F7;
+}
+
+.textoconheca {
+    font-family: 'Gloock', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F7F7F7;
+    text-align: justify;
+}
+
+
+.botaoconheca {
+    background-color: #FEB326;
+    color: #111111;
+    border-style: none;
+    height: 35px;
+    width: 150px;
+    border-radius: 30px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+#produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tituloprodutos {
+    color: #F7F7F7;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.videoprodutos {
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin: 25px;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#titulocontato {
+    color: #F7F7F7;
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.campoemailcontato {
+    background-color: #F7F7F7;
+    color: #111111;
+    border-style: none;
+    height: 35px;
+    width: 195px;
+    border-radius: 30px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin-right: 3px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.botaoemailcontato {
+    background-color: #F7F7F7;
+    color: #111111;
+    border-style: none;
+    height: 35px;
+    width: 90px;
+    border-radius: 30px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.botaoemailcontato:hover {
+    background-color: #F7F7F7;
+    color: #7F58AF;
+    border-style: none;
+    height: 35px;
+    width: 90px;
+    border-radius: 30px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+#footer {
+    font-family: 'Sarala', sans-serif;
+    background-color: #F8F8F8;
+    color: #111111;
+    font-weight: 800;
+    text-align: center;
+    padding: 5px;
+}
+
+@media (max-width: 800px) {
+    #header {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    #conheca {
+        flex-direction: column-reverse;
+        width: 95%;
+        margin: auto;
+    }
+
+    .botaoconheca {
+        align-self: center;
+    }
+
+    #conhecaimagem {
+        max-width: 100%;
+        height: auto;
+    }
+}
